@@ -13,7 +13,11 @@ def mul(num1, num2):
     answer = num1 * num2
     return answer
 
-# 두 수의 나누셈 --> 나눗셈 결과의 몫은 //, /은 단순 나눗셈(float형)
+# 두 수의 나눗셈 --> 나눗셈 결과의 몫은 //, /은 단순 나눗셈(float형)
 def div(num1, num2):
     answer = num1 // num2
     return answer
+
+# 나눗셈 2
+def div2(num1, num2):
+    return int(num1 / num2 * 1000)
