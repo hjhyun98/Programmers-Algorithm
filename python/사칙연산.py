@@ -21,3 +21,8 @@ def div(num1, num2):
 # 나눗셈 2
 def div2(num1, num2):
     return int(num1 / num2 * 1000)
+
+# 나머지 구하기
+def remainder(num1, num2):
+    return num1 % num2
+

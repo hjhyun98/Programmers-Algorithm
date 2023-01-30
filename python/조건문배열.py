@@ -24,3 +24,39 @@ def double_list(numbers):
         answer.append(number*2)
     return answer
 
+# 중앙값 구하기
+def get_mid_val(array):
+    array.sort()
+    if len(array) % 2 == 0:
+        return array[len(array)//2-1]
+    else:
+        return array[len(array)//2]
+    
+    
+# 최빈값 구하기
+def get_mode(array):
+    max_count = -1 
+    n = 0
+    flag = False
+    while n < 1000:
+        if array.count(n) > max_count:
+            max_count = array.count(n)
+            max_num = n
+            flag = False
+        elif array.count(n) == max_count:
+            flag = True
+        n+=1
+    if flag == True:
+        return -1
+    else:
+        return max_num
+    
+# 짝수는 싫어요
+def only_odd(n):
+    answer = []
+    m = 1
+    while m <= n:
+        answer.append(m)
+        m += 2
+            
+    return answer
