@@ -27,3 +27,14 @@ def print_string_ntimes(my_string, n):
     for i in my_string:
         answer+=i*n
     return answer
+
+# 특정 문자 제거하기
+def ver1(my_string, letter):
+    answer = ''
+    for ch in my_string:
+        if ch != letter:
+            answer += ch
+    return answer
+
+def ver2(my_string, letter):
+    return my_string.replace(letter, '')

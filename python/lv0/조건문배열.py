@@ -60,3 +60,18 @@ def only_odd(n):
         m += 2
             
     return answer
+
+# 각도기
+def angle(angle):
+    if angle < 90:
+        return 1
+    elif angle == 90:
+        return 2
+    elif angle <180:
+        return 3
+    else:
+        return 4
+    
+# 양꼬치
+def lamb_skewers(n, k):
+    return n * 12000 + (k - n // 10) * 2000

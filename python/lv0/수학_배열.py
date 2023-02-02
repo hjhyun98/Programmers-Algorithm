@@ -52,3 +52,11 @@ def reverse_list(num_list):
     num_list.reverse()
     return num_list
    
+#  짝수의 합
+def get_sum_of_even(n):
+    answer = 0
+    i = 2
+    while i <= n:
+        answer += i
+        i += 2
+    return answer  
