@@ -20,4 +20,19 @@ def solution1_2(hp):
     return answer
 
 def solution1_3(hp):
-    return hp // 5 + (hp % // 3) + ((hp % 5) % 3)
+    return hp // 5 + (hp % 5 // 3) + ((hp % 5) % 3)
+
+def solution2(letter):
+    morse = { 
+    '.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e','..-.':'f',
+    '--.':'g','....':'h','..':'i','.---':'j','-.-':'k','.-..':'l',
+    '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
+    '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
+    '-.--':'y','--..':'z'
+    }
+    answer = ''
+    words = letter.split()
+    for i in words:
+        answer += morse[i]
+    
+    return answer
