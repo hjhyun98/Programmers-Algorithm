@@ -43,3 +43,16 @@ def solution3(numbers, k):
 
 def solution3_2(numbers, k):
     return numbers[2 * (k - 1) % len(numbers)]
+
+# 배열 회전시키기
+def solution4(numbers, direction):
+    if direction == "right":
+        numbers.insert(0,numbers.pop())
+    else:
+        temp = numbers[0]
+        del numbers[0]
+        numbers.append(temp)
+    return numbers
+
+def solution4_2(numbers, direction):
+    return [numbers[-1] + numbers[:-1] if direction == 'right' else numbers[1:] + numbers[0]]
