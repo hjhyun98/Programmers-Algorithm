@@ -25,3 +25,23 @@ def solution2_2(n):
                 output += 1
                 break
     return output
+
+# 최댓값 만들기 1
+def solution3(numbers):
+    numbers.sort(reverse=True)
+    return numbers[0]*numbers[1]
+
+def solution3_2(numbers):
+    numbers.sort()
+    return numbers[-1]*numbers[-2]
+
+# 팩토리얼
+def solution4(n):
+    k = 1
+    for i in range(1, 11):
+        k = k * i
+        if k == n:
+            return i
+        elif k > n:
+            return i - 1
+        
